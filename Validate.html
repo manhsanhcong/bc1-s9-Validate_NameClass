@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function checkName(str){
+        regapx = /^[C,A,P]{1}[0-9]{4}[G,H,I,K,L,M]{1}$/;
+        if (regapx.test(str)){
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+    var name = 'C0318G';
+    console.log(checkName(name));
+    var name = 'M0318G';
+    console.log(checkName(name));
+
+</script>
+</body>
+</html>
